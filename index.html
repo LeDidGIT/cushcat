@@ -82,6 +82,35 @@
 .token-info a:hover {
   text-decoration: underline;
 }
+   .buttons {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.button {
+  display: inline-block;
+  padding: 12px 22px;
+  background-color: #f0b90b;
+  color: #0b1220;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.button.secondary {
+  background-color: #1e293b;
+  color: #cbd5f5;
+  border: 1px solid #334155;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+} 
   </style>
 </head>
 <body>
@@ -122,6 +151,34 @@
   <footer>
     © 2026 CushCat — Built step by step
   </footer>
+<section class="buttons">
+  <a
+    class="button"
+    href="https://pancakeswap.finance/swap?outputCurrency=0x536d7f66f849955d422521ea3388ef409093fb97"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Buy on PancakeSwap
+  </a>
+
+  <a
+    class="button secondary"
+    href="https://bscscan.com/token/0x536d7f66f849955d422521ea3388ef409093fb97"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View on BscScan
+  </a>
+
+  <a
+    class="button secondary"
+    href="https://github.com/LeDidGIT/cushcat"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    GitHub
+  </a>
+</section>
 
 </body>
 </html>
