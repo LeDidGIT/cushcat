@@ -214,30 +214,62 @@ footer {
   }
 }
 
-/* ===== RESPONSIVE MOBILE ===== */
+/* ===== RESPONSIVE MOBILE PREMIUM ===== */
 
 @media (max-width: 768px) {
 
-  h1 {
-    font-size: 2rem;
+  /* HERO */
+
+  .hero {
+    padding: 50px 15px 20px;
   }
 
   img {
-    width: 140px;
+    width: 130px;
   }
 
-  .hero {
-    padding: 60px 15px 30px;
+  h1 {
+    font-size: 1.9rem;
   }
+
+  p {
+    font-size: 0.95rem;
+    padding: 0 10px;
+  }
+
+  /* BUTTONS */
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .button {
+    width: 85%;
+    max-width: 280px;
+  }
+
+  /* SECTIONS */
 
   .token-info,
   .trust-section,
   .liquidity-section {
-    padding: 25px 18px;
+    margin: 25px 12px 0 12px;
+    padding: 22px 16px;
   }
 
-  p {
-    font-size: 1rem;
+  /* CONTRACT ADDRESS */
+
+  .contract-address {
+    font-size: 0.85rem;
+  }
+
+  /* FOOTER */
+
+  footer {
+    font-size: 0.8rem;
+    padding: 18px;
   }
 
 }
