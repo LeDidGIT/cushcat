@@ -271,6 +271,24 @@ footer {
     font-size: 0.8rem;
     padding: 18px;
   }
+/* ===== TRUST BADGES ===== */
+
+.badges {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  background: #0b1628;
+  border: 1px solid #1e293b;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  color: #cbd5f5;
+  }
 
 }
 
