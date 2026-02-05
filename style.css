@@ -311,6 +311,45 @@ footer {
   color: #cbd5f5;
   line-height: 1.7;
 }
+.tokenomics-section {
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  padding: 30px;
+  background: #0b1628;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+}
+
+.tokenomics-section h2 {
+  margin-top: 0;
+  color: #7dd3fc;
+}
+
+.tokenomics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.tokenomics-card {
+  background: #091423;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #1e293b;
+}
+
+.tokenomics-label {
+  display: block;
+  color: #94a3b8;
+  font-size: 0.9rem;
+  margin-bottom: 6px;
+}
+
+.tokenomics-value {
+  color: #f0b90b;
+  font-weight: bold;
+}
 
 }
 
