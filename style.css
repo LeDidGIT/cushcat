@@ -372,6 +372,34 @@ footer {
   color: #f0b90b;
   font-weight: bold;
 }
+  
+/* ===== COMMUNITY ===== */
+  
+.community-section {
+  max-width: 700px;
+  margin: 25px auto 0 auto;
+  padding: 25px 30px;
+  background: #0b1628;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+}
+
+.community-section h2 {
+  margin-top: 0;
+  color: #7dd3fc;
+}
+
+.community-section p {
+  margin-top: 15px;
+  color: #cbd5f5;
+  line-height: 1.7;
+}
+
+.community-placeholder {
+  margin-top: 15px;
+  font-style: italic;
+  color: #94a3b8;
+}
 
 }
 
