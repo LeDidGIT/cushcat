@@ -259,7 +259,8 @@ footer {
   transition: opacity 0.35s cubic-bezier(.4,0,.2,1);
 }
 
-.cushcat-logo:hover .logo-hover {
+@media (hover: hover) {
+  .cushcat-logo:hover .logo-hover {
   opacity: 1;
 }
 
