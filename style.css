@@ -401,5 +401,42 @@ footer {
   color: #94a3b8;
 }
 
+  /* ===== CUSHCAT LOGO INTERACTIVE ===== */
+
+.cushcat-logo {
+  position: relative;
+  width: 180px;
+  margin: 0 auto 20px auto;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.cushcat-logo img {
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+  image-rendering: pixelated;
+}
+
+.logo-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.35s cubic-bezier(.4,0,.2,1);
+}
+
+.cushcat-logo:hover .logo-hover {
+  opacity: 1;
+}
+
+.cushcat-logo:focus .logo-hover {
+  opacity: 1;
+}
+
+.cushcat-logo.is-active .logo-hover {
+  opacity: 1;
+}
+
 }
 
