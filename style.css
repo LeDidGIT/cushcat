@@ -259,19 +259,12 @@ footer {
   transition: opacity 0.35s cubic-bezier(.4,0,.2,1);
 }
 
-.cushcat-logo:hover:not(.is-active) .logo-hover {
-  opacity: 1;
-}
-
-.cushcat-logo:focus .logo-hover {
+.cushcat-logo:hover .logo-hover {
   opacity: 1;
 }
 
 .cushcat-logo.is-active .logo-hover {
   opacity: 1;
-}
-.cushcat-logo.disable-hover:hover .logo-hover {
-  opacity: 0;
 }
 
 /* ===== RESPONSIVE MOBILE PREMIUM ===== */
