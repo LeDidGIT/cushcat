@@ -225,22 +225,24 @@ document.querySelectorAll('.cushcat-logo').forEach(logo => {
   logo.addEventListener('click', () => {
 
     logo.classList.add('is-active');
+    logo.classList.add('disable-hover');
 
-    // Reset timer si re-click
-    if (smileTimer) {
-      clearTimeout(smileTimer);
-    }
+    if (smileTimer) clearTimeout(smileTimer);
 
-    // Retour au neutre après 2 secondes
     smileTimer = setTimeout(() => {
       logo.classList.remove('is-active');
+
+      // petit délai pour éviter hover instantané
+      setTimeout(() => {
+        logo.classList.remove('disable-hover');
+      }, 200);
+
     }, 2000);
 
   });
 
 });
 </script>
-
 
 </body>
 </html>
