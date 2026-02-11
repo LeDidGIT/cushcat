@@ -220,12 +220,27 @@
 <script>
 document.querySelectorAll('.cushcat-logo').forEach(logo => {
 
+  let smileTimer = null;
+
   logo.addEventListener('click', () => {
-    logo.classList.toggle('is-active');
+
+    logo.classList.add('is-active');
+
+    // Reset timer si re-click
+    if (smileTimer) {
+      clearTimeout(smileTimer);
+    }
+
+    // Retour au neutre après 2 secondes
+    smileTimer = setTimeout(() => {
+      logo.classList.remove('is-active');
+    }, 2000);
+
   });
 
 });
 </script>
+
 
 </body>
 </html>
