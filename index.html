@@ -218,6 +218,12 @@
   </footer>
   
 <script>
+const isTouchDevice = window.matchMedia("(hover: none)").matches;
+
+if (isTouchDevice) {
+  document.body.classList.add("no-hover");
+}
+
 document.querySelectorAll('.cushcat-logo').forEach(logo => {
 
   let smileTimer;
@@ -229,12 +235,7 @@ document.querySelectorAll('.cushcat-logo').forEach(logo => {
     clearTimeout(smileTimer);
 
     smileTimer = setTimeout(() => {
-
       logo.classList.remove('is-active');
-
-      // force le navigateur à recalculer le hover
-      logo.blur();
-
     }, 2000);
 
   });
