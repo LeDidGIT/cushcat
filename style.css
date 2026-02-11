@@ -267,6 +267,10 @@ footer {
 .cushcat-logo.is-active .logo-hover {
   opacity: 1;
 }
+  .no-hover .cushcat-logo:hover .logo-hover {
+  opacity: 0 !important;
+}
+
 
 /* ===== RESPONSIVE MOBILE PREMIUM ===== */
 
