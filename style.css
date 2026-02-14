@@ -270,28 +270,6 @@ footer {
   opacity: 1;
 }
 
-  /* ===== LOGO AREA WITH X LINK ===== */
-
-.logo-area {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  margin-bottom: 20px;
-}
-
-.x-link {
-  font-size: 1.4rem;
-  text-decoration: none;
-  color: #94a3b8;
-  transition: transform 0.2s ease, color 0.2s ease;
-}
-
-.x-link:hover {
-  color: #f0b90b;
-  transform: scale(1.1);
-}
-
 /* ===== RESPONSIVE MOBILE PREMIUM ===== */
 
 @media (max-width: 768px) {
