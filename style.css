@@ -437,5 +437,40 @@ footer {
   font-style: italic;
   color: #94a3b8;
 }
+.creative-section {
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 35px;
+  background: #0b1628;
+  border: 1px solid #1e293b;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.creative-section h2 {
+  margin-top: 0;
+  color: #7dd3fc;
+  font-size: 1.6rem;
+}
+
+.creative-gallery {
+  margin-top: 25px;
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.creative-gallery img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  transition: transform 0.2s ease;
+}
+
+.creative-gallery img:hover {
+  transform: scale(1.02);
+}
 
  
