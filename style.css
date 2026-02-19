@@ -410,7 +410,9 @@ footer {
   color: #f0b90b;
   font-weight: bold;
 }
-} 
+
+}
+
 /* ===== COMMUNITY ===== */
   
 .community-section {
@@ -458,15 +460,15 @@ footer {
 .creative-gallery {
   margin-top: 40px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 380px));
   gap: 40px;
-  justify-items: center;
+  justify-content: center;
 }
 
 .creative-gallery img {
   width: 100%;
-  max-width: 380px;
-  border-radius: 14px;
+  height: auto;
+  border-radius: 16px;
   border: 1px solid #1e293b;
   box-shadow: 0 12px 30px rgba(0,0,0,0.35);
   transition: transform 0.25s ease, box-shadow 0.25s ease;
