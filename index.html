@@ -259,25 +259,36 @@ document.querySelectorAll('.cushcat-logo').forEach(logo => {
 
 });
   
-  /* ===== SCROLL FADE-IN ===== */
+ /* ===== PREMIUM SCROLL REVEAL ===== */
 
-const fadeElements = document.querySelectorAll('.creative-gallery img');
+const revealElements = document.querySelectorAll(
+  '.creative-gallery img'
+);
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach((entry, index) => {
     if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-      observer.unobserve(entry.target);
+      const el = entry.target;
+
+      // léger décalage en cascade
+      setTimeout(() => {
+        el.classList.add('visible');
+      }, el.dataset.delay);
+
+      revealObserver.unobserve(el);
     }
   });
 }, {
   threshold: 0.15
 });
 
-fadeElements.forEach(el => {
-  el.classList.add('fade-in');
-  observer.observe(el);
+// appliquer classe + delay progressif
+revealElements.forEach((el, i) => {
+  el.classList.add('reveal');
+  el.dataset.delay = i * 150; // 150ms entre chaque image
+  revealObserver.observe(el);
 });
+
 </script>
 
 </body>
