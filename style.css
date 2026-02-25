@@ -34,6 +34,16 @@ h1 {
   margin: 0;
 }
 
+.hero p {
+  color: #dbeafe;
+}
+
+.hero .subtitle {
+  color: #f5d48a;
+  font-style: italic;
+  margin-top: 12px;
+}
+
 p {
   max-width: 600px;
   margin: 20px auto;
