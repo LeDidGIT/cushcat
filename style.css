@@ -509,6 +509,16 @@ footer {
   box-shadow: 0 10px 30px rgba(245, 212, 138, 0.05);
 }
 
+/* ===== SECTION SPACING REFINEMENT ===== */
+
+.story-section,
+.trust-section,
+.distribution-section,
+.liquidity-section,
+.community-section {
+  margin: 40px auto;
+}
+
 /* ===== SCROLL FADE-IN ANIMATION ===== */
 
 .fade-in {
